@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 Couleur : 
 
 /*  GRIS : #6f7678
     BLEU : #2bbbdf 
+=======
+Couleur : 
+
+/*  GRIS : #6f7678
+    BLEU : #2bbbdf 
+>>>>>>> origin/master
  */
