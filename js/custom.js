@@ -1,12 +1,3 @@
-/* fonction quon appel pour charger les API*/
-function homePageLoading() {
-  
-    fonctionRequeteApi("https://api.blockcypher.com/v1/btc/main", "info");
-    fonctionRequeteApi("http://bitcoin.mubiz.com/peerinfo","peerinfo");
-    fonctionRequeteApi("http://bitcoin.mubiz.com/mininginfo", "mininginfo");
-    fonctionRequeteApi("http://bitcoin.mubiz.com/blockchaininfo", "blockchaininfo");   
-}
-
 /* fonction pour integrer l'API*/
 function fonctionRequeteApi(url,elementID)
 {
@@ -20,4 +11,13 @@ function fonctionRequeteApi(url,elementID)
     };
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
+}
+
+/* fonction quon appel pour charger les API*/
+function homePageLoading() {
+  
+    fonctionRequeteApi("https://api.blockcypher.com/v1/btc/main", "info");
+    fonctionRequeteApi("http://bitcoin.mubiz.com/peerinfo","peerinfo");
+    fonctionRequeteApi("http://bitcoin.mubiz.com/mininginfo", "mininginfo");
+    fonctionRequeteApi("http://bitcoin.mubiz.com/blockchaininfo", "blockchaininfo");   
 }
