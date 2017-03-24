@@ -17,7 +17,7 @@ xmlhttp.send();
 function homePageLoading() {
   
     fonctionRequeteApi("https://api.blockcypher.com/v1/btc/main", "info");
-    fonctionRequeteApi("http://bitcoin.mubiz.com/peerinfo","peerinfo");
-    fonctionRequeteApi("http://bitcoin.mubiz.com/mininginfo", "mininginfo");
-    fonctionRequeteApi("http://bitcoin.mubiz.com/blockchaininfo", "blockchaininfo");   
+    fonctionRequeteApi("https://bitcoin.mubiz.com/peerinfo","peerinfo");
+    fonctionRequeteApi("https://bitcoin.mubiz.com/mininginfo", "mininginfo");
+    fonctionRequeteApi("https://bitcoin.mubiz.com/blockchaininfo", "blockchaininfo");   
 }
