@@ -21,3 +21,15 @@ function homePageLoading() {
     fonctionRequeteApi("https://bitcoin.mubiz.com/mininginfo", "mininginfo");
     fonctionRequeteApi("https://bitcoin.mubiz.com/blockchaininfo", "blockchaininfo");   
 }
+
+/*Fonction pour recuperer et afficher les valeurs saisie par le formulaire*/
+
+function ShowData()
+{
+     var email=document.getElementById("Email").value;
+     document.getElementById("res_email").innerHTML =email; //pour afficher email
+    var password= document.getElementById("Password").value;
+     document.getElementById("res_psw").innerHTML =password; //pour afficher 
+    
+}
+

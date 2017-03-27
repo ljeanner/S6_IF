@@ -7,9 +7,17 @@
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="../../style/style.css" title="style" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-</head>
+<!--BOOTSTRAP -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </head>
 
 <body>
   <div id="main">
@@ -24,7 +32,7 @@
       <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-            <li class="selected"><a href="../../index.html">Accueil</a></li>
+            <li><a href="../../index.html">Accueil</a></li>
             <li><a href="../index.html">Bitcoin</a></li>
             <li class="selected"><a href="index.html">Formulaire</a></li>
           <li><a href="../../contact.html">Contactez-nous</a></li>
@@ -33,50 +41,57 @@
     </div>
     <div id="site_content">
       <div class="sidebar">
-        <!-- insert your sidebar items here -->
+        <!-- insert   your sidebar items here -->
         <h3>ESILV BlockChain</h3>
         
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>Bienvenue sur le site de Pierre et Lucile</h1>
+        <h1>>Bitcoin >Explorer>Index</h1>
+        <h2>Test sur un formulaire TP2</h2>
           <form class="form-horizontal">
           <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Votre Email</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              <input type="email" class="form-control" id="Email" placeholder="Email">
             </div>
           </div>
           <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Votre Password</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              <input type="password" class="form-control" id="Password" placeholder="Password">
             </div>
           </div>
-          <div class="form-group">
+        </form> 
+          
+        <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Remember me
-                </label>
-              </div>
+                <button onclick="ShowData()" type="submit" class="btn btn-default">Afficher</button>
             </div>
           </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Sign in</button>
+          <h2>Resultat de la Requete : </h2>
+          <div class="row">
+            <div class="col-lg-12 col-xs-6">
+                <p>Email</p>
+                <div class="resulat">
+                    <p id ="res_email"></p>
+                </div>
+                <p> Password </p>
+                <p id="res_psw"></p>
             </div>
-          </div>
-        </form>
-       
-      </div>
-      </div>
-    <div id="footer">
-     <a> ESILV BLOCKCHAIN - S6 - ELECTIF IF</a>
+        </div>
     </div>
+</div>
+   <div id="footer">
+    <div id="menubar">
+        <ul id="menu">
+          <a>ESILV BLOCKCHAIN - S6 - ELECTIF IF</a>
+        </ul>
       </div>
+    </div>  
+</div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../custom.js"></script>
+<script src="../../js/custom.js"></script>
 </body>
 </html>
