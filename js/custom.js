@@ -26,9 +26,8 @@ function homePageLoading() {
 
 function SendData()
 {
-    //var adr=document.getElementById("url").value;
-    var api=document.getElementById("url").value;;
-    var adresse = "https://bitcoin.mubiz.com/peerinfo"
+    var api=document.getElementById("select_api").value;
+    var adresse = "https://bitcoin.mubiz.com/"
     var url= adresse.concat(api);
     fonctionRequeteApi(url,"resultat");
 }
