@@ -24,12 +24,12 @@ function homePageLoading() {
 
 /*Fonction pour recuperer et afficher les valeurs saisie par le formulaire*/
 
-function ShowData()
+function SendData()
 {
-     var email=document.getElementById("Email").value;
-     document.getElementById("res_email").innerHTML =email; //pour afficher email
-    var password= document.getElementById("Password").value;
-     document.getElementById("res_psw").innerHTML =password; //pour afficher 
-    
+    //var adr=document.getElementById("url").value;
+    var api=document.getElementById("url").value;;
+    var adresse = "https://bitcoin.mubiz.com/peerinfo"
+    var url= adresse.concat(api);
+    fonctionRequeteApi(url,"resultat");
 }
 
