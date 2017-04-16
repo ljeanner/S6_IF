@@ -306,11 +306,18 @@ pre {
  overflow-y:auto;
  height:250px;
  display: flex;
- padding: 12px;
- color: #1293EE !important;
- background:#f5f5f5;
- font-size :12px!important;
+
 }
+
+pre {
+    outline: 1px solid #ccc !important;
+    padding: 5px; margin: 5px;  
+}
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
 
 
 
